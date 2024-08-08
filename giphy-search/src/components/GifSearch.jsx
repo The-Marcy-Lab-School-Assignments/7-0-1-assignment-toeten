@@ -24,9 +24,9 @@ function GifSearch({ onSearchResults }) {
         className="form-control" 
         id="searchInput" 
         value={query}
-        onChange={(e) => setQuery(e.target.value)} 
+        onChange={(event) => setQuery(event.target.value)} 
       />
-      <button type="submit" className="btn btn-success">Search</button>
+      <button type="submit" className="btn btn-success">Find a Gif</button>
       {error && <p>Error: {error}</p>}
     </form>
   )
